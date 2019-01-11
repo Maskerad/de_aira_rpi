@@ -5,9 +5,9 @@ NIX_CFG="https://raw.githubusercontent.com/tuuzdu/de_aira_rpi/ed8fa0e20911fdf440
 curl --insecure $NIX_CFG --output configuration.nix -L
 mv configuration.nix /etc/nixos/
 
-echo "Dowloading and unpacking airapkgs..."
-curl --insecure https://github.com/tuuzdu/airapkgs/archive/nixos-unstable.tar.gz --output airapkgs.tar.gz -L
-tar xvf airapkgs.tar.gz
+#echo "Dowloading and unpacking airapkgs..."
+#curl --insecure https://github.com/tuuzdu/airapkgs/archive/nixos-unstable.tar.gz --output airapkgs.tar.gz -L
+#tar xvf airapkgs.tar.gz
 
 echo "Enable swap"
 fallocate -l 4G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile
