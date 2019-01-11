@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Dowloading NixOS configuration for Raspberry Pi 3..."
-NIX_CFG="https://raw.githubusercontent.com/tuuzdu/de_aira_rpi/ed8fa0e20911fdf440dc8759c165f509729668c2/configuration.nix"
+NIX_CFG="https://raw.githubusercontent.com/Maskerad/de_aira_rpi/master/configuration.nix"
 curl --insecure $NIX_CFG --output configuration.nix -L
 mv configuration.nix /etc/nixos/
 
