@@ -95,8 +95,10 @@
     # };
   };
 
-  # Build AIRA packages
-  nix.useSandbox = false;
+  nixpkgs.config =
+    {
+      allowUnfree = true;
+     };
 
   # Preinstall packages
   environment.systemPackages = with pkgs; [
