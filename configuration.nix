@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  # imports = [ <nixpkgs/nixos/modules/installer/cd-dvd/sd-image-aarch64.nix> ];
+  imports = [ <nixpkgs/nixos/modules/installer/cd-dvd/sd-image-aarch64.nix> ];
   
   hardware = {
     # usbWwan.enable = true;
