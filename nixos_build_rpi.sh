@@ -16,4 +16,4 @@ echo "Use fdisk to remove the bootable flag from the FAT32 partition, and set it
 umount /boot && fdisk /dev/mmcblk0
 
 echo "Building..."
-nixos-rebuild switch -I nixpkgs=/root/airapkgs-nixos-unstable --cores 4
+nixos-rebuild switch #-I nixpkgs=/root/airapkgs-nixos-unstable --cores 4
