@@ -10,7 +10,7 @@
       # NixOS wants to enable GRUB by default
       grub.enable = false;
       # Enables the generation of /boot/extlinux/extlinux.conf
-      generic-extlinux-compatible.enable = false;
+      # generic-extlinux-compatible.enable = false;
       # Autoboot without serial port interrupt on extlinux
       timeout = -1;
       raspberryPi = {
