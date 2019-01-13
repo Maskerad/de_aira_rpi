@@ -108,7 +108,7 @@
     # Tor config
     tor.enable = true;
     tor.relay.enable = true;
-    tor.relay.type = "bridge";
+    tor.relay.role = "bridge";
     tor.relay.port = 443;
     
 #    # For Huawei E3372 ethernet mode
