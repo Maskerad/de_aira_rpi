@@ -53,16 +53,16 @@
   systemd.services."serial-getty@ttyS1".enable = false;
     
 # File systems configuration for using the installer's partition layout
-  fileSystems = {
+#  fileSystems = {
 #    "/boot" = {
 #      device = "/dev/disk/by-label/NIXOS_BOOT";
 #      fsType = "vfat";
 #    };
-    "/" = {
-      device = "/dev/disk/by-label/NIXOS_SD";
-      fsType = "ext4";
-    };
-  };
+#    "/" = {
+#      device = "/dev/disk/by-label/NIXOS_SD";
+#      fsType = "ext4";
+#    };
+#  };
 
 # !!! Adding a swap file is optional, but strongly recommended!
   swapDevices = [ { device = "/swapfile"; size = 2048; } ];
