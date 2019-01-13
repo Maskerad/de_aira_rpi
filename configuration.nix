@@ -30,9 +30,6 @@
     kernelParams = ["console=ttyS1,115200n8"];
   };  
 
-# networking
-  networking.hostName = "pixie";
-
 # internationalisation properties
   i18n = {
     consoleFont = "Lat2-Terminus16";
@@ -74,6 +71,7 @@
   networking = {
     # Open ports for ROS
     firewall.enable = false;
+    hostName = "pixie";
 #    # Hosts for remote ROS connections
 #    # hosts = { "192.168.0.106" = [ "tuuzdu-AIR13" ]; };
 #    # WiFi AP
