@@ -1,3 +1,7 @@
+### To be retired
+
+---
+
 ### Raspberry Pi 3 AIRA NixOS image
 
 #### Prepare
